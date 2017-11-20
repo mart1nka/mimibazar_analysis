@@ -19,5 +19,6 @@ df_10 = df[df['instructions'].str.len() > 10]
 
 df_10.to_csv('out_all4.csv', encoding="utf-8")
 
+#example of filtering
 nezdravy_recept = df_10[df_10['ingredients'].str.lower().str.contains("kečup") & df_10['ingredients'].str.lower().str.contains("tatar")]
 nezdravy_recept
